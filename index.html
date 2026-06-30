@@ -165,7 +165,7 @@
 
   <main>
     <h1 class="page-title">Privacy Policy</h1>
-    <span class="last-updated">Last updated: April 2026</span>
+    <span class="last-updated">Last updated: June 2026</span>
 
     <div class="intro">
       OffBook is built with a simple principle: your data is yours. This app does not collect, transmit, or share any personal information. Everything stays on your device.
@@ -187,26 +187,30 @@
 
     <section>
       <h2>3. Microphone Permission</h2>
-      <p>OffBook requests access to your device's microphone solely to enable the line rehearsal feature, which allows you to speak your lines aloud and have them checked against your script. This is an optional feature.</p>
+      <p>OffBook requests access to your device's microphone solely to enable the line rehearsal feature, which allows you to speak your lines aloud and have them checked against your script. This is an optional feature. How this is processed depends on your device's platform:</p>
       <div class="highlight-box">
-        <p>Speech recognition is processed via Google's speech recognition service, which means audio is transmitted to Google's servers for the purpose of converting your speech to text. This is handled by Android's standard speech recognition API and is subject to Google's own privacy policy. OffBook does not receive, store, or retain any audio recordings or transcriptions beyond what is needed to check your spoken line in the moment.</p>
+        <p><strong>Android:</strong> Speech recognition is processed via Google's speech recognition service, which means audio is transmitted to Google's servers for the purpose of converting your speech to text. This is handled by Android's standard speech recognition API and is subject to Google's own privacy policy.</p>
       </div>
+      <div class="highlight-box">
+        <p><strong>iOS:</strong> Speech recognition is processed on-device using Apple's Speech framework. Audio is not transmitted to Apple's servers or any other server for this purpose.</p>
+      </div>
+      <p>On both platforms, OffBook does not receive, store, or retain any audio recordings or transcriptions beyond what is needed to check your spoken line in the moment.</p>
     </section>
 
     <section>
       <h2>4. Internet Access</h2>
       <p>OffBook requires internet access for the following limited purposes only:</p>
       <ul>
-        <li>Processing speech recognition via Google's speech recognition service when using the line rehearsal feature</li>
-        <li>Processing the optional one-off Pro unlock purchase via Google Play's billing system</li>
-        <li>Receiving app updates delivered through the Google Play Store</li>
+        <li>Processing speech recognition via Google's speech recognition service when using the line rehearsal feature on Android devices (not applicable on iOS, where speech recognition is processed on-device)</li>
+        <li>Processing the optional one-off Pro unlock purchase via Google Play's billing system (Android) or the App Store's billing system (iOS)</li>
+        <li>Receiving app updates delivered through the Google Play Store or Apple App Store</li>
       </ul>
       <p>Internet access is not used to transmit any personal data, script content, rehearsal data, or usage information beyond what is described above. No analytics, advertising, or tracking services are connected to this app.</p>
     </section>
 
     <section>
       <h2>5. Data Storage</h2>
-      <p>All app data is stored locally on your device using Android's standard local storage. This includes:</p>
+      <p>All app data is stored locally on your device using your device's standard local storage. This includes:</p>
       <ul>
         <li>Script and production data you enter or import</li>
         <li>Rehearsal session history and confidence scores</li>
@@ -217,7 +221,8 @@
 
     <section>
       <h2>6. Third-Party Services</h2>
-      <p>OffBook uses Google Play's billing system to process the optional one-off Pro unlock purchase. This transaction is handled entirely by Google Play and is subject to Google's own privacy policy. OffBook does not receive or store any payment information.</p>
+      <p>OffBook uses Google Play's billing system (Android) or the App Store's billing system (iOS) to process the optional one-off Pro unlock purchase. These transactions are handled entirely by Google or Apple respectively and are subject to their own privacy policies. OffBook does not receive or store any payment information.</p>
+      <p>On Android, speech recognition is also processed via Google's speech recognition service as described in Section 3.</p>
       <p>No other third-party analytics, advertising, or tracking services are used.</p>
     </section>
 
