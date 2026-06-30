@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OffBook – Privacy Policy</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
+
+    :root {
+      --bg: #0f0f13;
+      --surface: #1a1a24;
+      --border: #2a2a38;
+      --purple: #9b6dff;
+      --purple-dim: #6b4dcc;
+      --text: #e8e8f0;
+      --muted: #8888a8;
+      --white: #ffffff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 0;
+      text-align: center;
+      background: linear-gradient(180deg, #1a1030 0%, var(--bg) 100%);
+    }
+
+    .logo {
+      font-size: 2.2rem;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+    }
+
+    .logo span:first-child { color: var(--white); }
+    .logo span:last-child { color: var(--purple); }
+
+    .tagline {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 0.3rem;
+      font-weight: 300;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+    }
+
+    .page-title {
+      font-size: 1.9rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 0.4rem;
+    }
+
+    .last-updated {
+      color: var(--muted);
+      font-size: 0.85rem;
+      font-family: 'DM Mono', monospace;
+      margin-bottom: 2.5rem;
+      display: block;
+    }
+
+    .intro {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--purple);
+      border-radius: 8px;
+      padding: 1.2rem 1.4rem;
+      margin-bottom: 2.5rem;
+      color: var(--text);
+      font-size: 0.95rem;
+    }
+
+    section {
+      margin-bottom: 2.2rem;
+    }
+
+    h2 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--purple);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-family: 'DM Mono', monospace;
+      margin-bottom: 0.8rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    p {
+      color: var(--text);
+      margin-bottom: 0.8rem;
+      font-size: 0.95rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 0.8rem;
+    }
+
+    ul li {
+      padding: 0.3rem 0 0.3rem 1.2rem;
+      position: relative;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--purple-dim);
+    }
+
+    .highlight-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+      margin: 1rem 0;
+    }
+
+    .highlight-box p {
+      margin: 0;
+    }
+
+    a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo"><span>Off</span><span>Book</span></div>
+    <p class="tagline">Learn your lines. Track your confidence.</p>
+  </header>
+
+  <main>
+    <h1 class="page-title">Privacy Policy</h1>
+    <span class="last-updated">Last updated: April 2026</span>
+
+    <div class="intro">
+      OffBook is built with a simple principle: your data is yours. This app does not collect, transmit, or share any personal information. Everything stays on your device.
+    </div>
+
+    <section>
+      <h2>1. Information We Collect</h2>
+      <p>OffBook does not collect any personal information. The app does not require you to create an account, sign in, or provide any personal details.</p>
+      <p>All data you create within the app — including productions, scripts, characters, rehearsal sessions, and confidence scores — is stored locally on your device only.</p>
+    </section>
+
+    <section>
+      <h2>2. Camera Permission</h2>
+      <p>OffBook requests access to your device's camera solely to allow you to import scripts by photographing a physical document. This is an optional feature.</p>
+      <div class="highlight-box">
+        <p>Images captured through the camera are processed entirely on your device. They are never stored, saved to your photo library, uploaded to any server, or shared with any third party. Once the text has been extracted, the image is immediately discarded.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>3. Microphone Permission</h2>
+      <p>OffBook requests access to your device's microphone solely to enable the line rehearsal feature, which allows you to speak your lines aloud and have them checked against your script. This is an optional feature.</p>
+      <div class="highlight-box">
+        <p>Speech recognition is processed via Google's speech recognition service, which means audio is transmitted to Google's servers for the purpose of converting your speech to text. This is handled by Android's standard speech recognition API and is subject to Google's own privacy policy. OffBook does not receive, store, or retain any audio recordings or transcriptions beyond what is needed to check your spoken line in the moment.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>4. Internet Access</h2>
+      <p>OffBook requires internet access for the following limited purposes only:</p>
+      <ul>
+        <li>Processing speech recognition via Google's speech recognition service when using the line rehearsal feature</li>
+        <li>Processing the optional one-off Pro unlock purchase via Google Play's billing system</li>
+        <li>Receiving app updates delivered through the Google Play Store</li>
+      </ul>
+      <p>Internet access is not used to transmit any personal data, script content, rehearsal data, or usage information beyond what is described above. No analytics, advertising, or tracking services are connected to this app.</p>
+    </section>
+
+    <section>
+      <h2>5. Data Storage</h2>
+      <p>All app data is stored locally on your device using Android's standard local storage. This includes:</p>
+      <ul>
+        <li>Script and production data you enter or import</li>
+        <li>Rehearsal session history and confidence scores</li>
+        <li>App settings and preferences</li>
+      </ul>
+      <p>This data is never transmitted off your device and is only accessible by the OffBook app.</p>
+    </section>
+
+    <section>
+      <h2>6. Third-Party Services</h2>
+      <p>OffBook uses Google Play's billing system to process the optional one-off Pro unlock purchase. This transaction is handled entirely by Google Play and is subject to Google's own privacy policy. OffBook does not receive or store any payment information.</p>
+      <p>No other third-party analytics, advertising, or tracking services are used.</p>
+    </section>
+
+    <section>
+      <h2>7. Children's Privacy</h2>
+      <p>OffBook does not knowingly collect any information from anyone, including children under the age of 13. As the app collects no personal data whatsoever, it is safe for use by all ages.</p>
+    </section>
+
+    <section>
+      <h2>8. Changes to This Policy</h2>
+      <p>If this privacy policy is updated, the new version will be posted at this URL. Continued use of the app following any changes constitutes acceptance of the updated policy.</p>
+    </section>
+
+    <section>
+      <h2>9. Contact</h2>
+      <p>If you have any questions about this privacy policy, please contact:</p>
+      <div class="highlight-box">
+        <p><strong>Alex Brent</strong><br>
+        Developer, OffBook<br>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Copyright © 2025–2026 Alex Brent. All rights reserved.</p>
+    <p style="margin-top: 0.4rem;">OffBook — Built by a performer, for performers.</p>
+  </footer>
+
+</body>
+</html>
