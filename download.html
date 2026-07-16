@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OffBook – Download</title>
+  <meta name="description" content="Download OffBook — learn your lines and track your confidence. Available on the App Store and Google Play.">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
+
+    :root {
+      --bg: #0f0f13;
+      --surface: #1a1a24;
+      --border: #2a2a38;
+      --purple: #9b6dff;
+      --purple-dim: #6b4dcc;
+      --text: #e8e8f0;
+      --muted: #8888a8;
+      --white: #ffffff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 0;
+      text-align: center;
+      background: linear-gradient(180deg, #1a1030 0%, var(--bg) 100%);
+    }
+
+    .logo {
+      font-size: 2.2rem;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+    }
+
+    .logo span:first-child { color: var(--white); }
+    .logo span:last-child { color: var(--purple); }
+
+    .tagline {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 0.3rem;
+      font-weight: 300;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+    }
+
+    /* ---- Hero ---- */
+    .hero {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .app-icon {
+      width: 112px;
+      height: 112px;
+      margin: 0 auto 1.5rem;
+      border-radius: 26px;
+      box-shadow: 0 12px 40px rgba(155, 109, 255, 0.35);
+      display: block;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: -0.5px;
+      margin-bottom: 0.6rem;
+    }
+
+    .hero .lead {
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 460px;
+      margin: 0 auto;
+      font-weight: 300;
+    }
+
+    /* ---- Store badges ---- */
+    .store-badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.9rem;
+      margin: 2rem 0 0.5rem;
+    }
+
+    .store-badge {
+      display: inline-flex;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+
+    .store-badge:hover {
+      transform: translateY(-2px);
+      text-decoration: none;
+    }
+
+    .store-badge svg {
+      height: 56px;
+      width: auto;
+      display: block;
+    }
+
+    /* Disabled / coming-soon state — add class="coming-soon" to a badge to grey it out */
+    .store-badge.coming-soon {
+      opacity: 0.4;
+      pointer-events: none;
+      filter: grayscale(1);
+    }
+
+    .store-note {
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-family: 'DM Mono', monospace;
+      margin-top: 0.4rem;
+    }
+
+    /* ---- Feature list ---- */
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--purple);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-family: 'DM Mono', monospace;
+      margin-bottom: 1.2rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .feature {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.2rem 1.3rem;
+    }
+
+    .feature .icon {
+      width: 34px;
+      height: 34px;
+      margin-bottom: 0.7rem;
+      color: var(--purple);
+    }
+
+    .feature h3 {
+      font-size: 0.98rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 0.3rem;
+    }
+
+    .feature p {
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    .cta-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--purple);
+      border-radius: 8px;
+      padding: 1.4rem 1.6rem;
+      text-align: center;
+    }
+
+    .cta-box p {
+      color: var(--text);
+      font-size: 0.95rem;
+      margin-bottom: 0;
+    }
+
+    a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    footer a { color: var(--muted); }
+
+    .footer-links {
+      margin-bottom: 0.8rem;
+    }
+
+    .footer-links a {
+      margin: 0 0.6rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 520px) {
+      .features { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 1.7rem; }
+      .store-badge svg { height: 50px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo"><span>Off</span><span>Book</span></div>
+    <p class="tagline">Learn your lines. Track your confidence.</p>
+  </header>
+
+  <main>
+
+    <div class="hero">
+      <!-- App icon -->
+      <svg class="app-icon" viewBox="0 0 112 112" role="img" aria-label="OffBook app icon" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="iconBg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#9b6dff"/>
+            <stop offset="1" stop-color="#5a3bb0"/>
+          </linearGradient>
+        </defs>
+        <rect width="112" height="112" rx="26" fill="url(#iconBg)"/>
+        <!-- open book -->
+        <g fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round">
+          <path d="M56 38c-7-5-17-7-26-6-2 .2-4 2-4 4v38c0 2 2 3.5 4 3.3 9-1 19 1 26 6"/>
+          <path d="M56 38c7-5 17-7 26-6 2 .2 4 2 4 4v38c0 2-2 3.5-4 3.3-9-1-19 1-26 6"/>
+          <path d="M56 38v45.6" stroke-width="4"/>
+        </g>
+      </svg>
+
+      <h1>OffBook</h1>
+      <p class="lead">The rehearsal companion for actors. Import your script, hide your lines, and track your confidence as you learn.</p>
+
+      <!--
+        ============================================================
+        STORE LINKS — replace the href="#" values below with your
+        real App Store and Google Play URLs when you have them.
+
+        To mark a store as not-yet-available, add the class
+        "coming-soon" to that <a>, e.g.:
+            <a class="store-badge coming-soon" ...>
+        (it will grey out and become non-clickable).
+        ============================================================
+      -->
+      <div class="store-badges">
+
+        <!-- Apple App Store -->
+        <a class="store-badge" href="#" aria-label="Download OffBook on the App Store">
+          <svg viewBox="0 0 120 40" role="img" aria-label="Download on the App Store" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.5" y="0.5" width="119" height="39" rx="6.5" fill="#000000" stroke="#a6a6a6" stroke-width="1"/>
+            <g fill="#ffffff">
+              <path d="M24.77 20.3c-.02-2.35 1.92-3.49 2.01-3.54-1.1-1.6-2.8-1.82-3.4-1.85-1.44-.15-2.83.85-3.56.85-.74 0-1.87-.83-3.08-.81-1.57.02-3.02.91-3.83 2.32-1.65 2.86-.42 7.08 1.17 9.4.78 1.13 1.7 2.4 2.9 2.36 1.17-.05 1.61-.76 3.02-.76 1.4 0 1.8.76 3.03.73 1.25-.02 2.05-1.15 2.81-2.29.9-1.31 1.27-2.58 1.29-2.65-.03-.01-2.46-.94-2.48-3.75zM22.43 12.9c.65-.79 1.09-1.88.97-2.98-.94.04-2.08.63-2.75 1.4-.6.69-1.13 1.79-.99 2.85 1.05.08 2.12-.53 2.77-1.27z"/>
+              <text x="38" y="16.5" font-family="'DM Sans',Helvetica,Arial,sans-serif" font-size="7.5" fill="#ffffff">Download on the</text>
+              <text x="37.5" y="30" font-family="'DM Sans',Helvetica,Arial,sans-serif" font-weight="600" font-size="16" fill="#ffffff">App Store</text>
+            </g>
+          </svg>
+        </a>
+
+        <!-- Google Play -->
+        <a class="store-badge" href="#" aria-label="Get OffBook on Google Play">
+          <svg viewBox="0 0 135 40" role="img" aria-label="Get it on Google Play" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.5" y="0.5" width="134" height="39" rx="6.5" fill="#000000" stroke="#a6a6a6" stroke-width="1"/>
+            <g transform="translate(12 10)">
+              <linearGradient id="gp1" x1="7.9" y1="1.4" x2="-3.1" y2="12.4" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#00a0ff"/><stop offset="0.26" stop-color="#00a1ff"/>
+                <stop offset="0.51" stop-color="#00beff"/><stop offset="0.76" stop-color="#00d2ff"/>
+                <stop offset="1" stop-color="#00e0ff"/>
+              </linearGradient>
+              <linearGradient id="gp2" x1="17.1" y1="10" x2="1.3" y2="10" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#ffe000"/><stop offset="0.41" stop-color="#ffbd00"/>
+                <stop offset="0.78" stop-color="#ffa500"/><stop offset="1" stop-color="#ff9c00"/>
+              </linearGradient>
+              <linearGradient id="gp3" x1="9.4" y1="11.5" x2="-5" y2="25.9" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#ff3a44"/><stop offset="1" stop-color="#c31162"/>
+              </linearGradient>
+              <linearGradient id="gp4" x1="-1.6" y1="-2.5" x2="4.8" y2="3.9" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#32a071"/><stop offset="0.07" stop-color="#2da771"/>
+                <stop offset="0.48" stop-color="#15cf74"/><stop offset="0.8" stop-color="#06e775"/>
+                <stop offset="1" stop-color="#00f076"/>
+              </linearGradient>
+              <path d="M.43.32C.17.6.01 1.02.01 1.57v16.86c0 .55.16.97.43 1.25l.06.05 9.44-9.44v-.22L.49.27z" fill="url(#gp1)"/>
+              <path d="M13.1 13.49l-3.15-3.15v-.22l3.15-3.15.07.04 3.73 2.12c1.06.6 1.06 1.59 0 2.2l-3.73 2.12z" fill="url(#gp2)"/>
+              <path d="M13.17 13.45L9.94 10.22.43 19.73c.35.37.93.42 1.58.05l11.16-6.33" fill="url(#gp3)"/>
+              <path d="M13.17 6.99L2.01.66C1.36.29.78.34.43.71l9.51 9.51z" fill="url(#gp4)"/>
+            </g>
+            <g fill="#ffffff">
+              <text x="37" y="16.5" font-family="'DM Sans',Helvetica,Arial,sans-serif" font-size="7" fill="#ffffff">GET IT ON</text>
+              <text x="36.5" y="30" font-family="'DM Sans',Helvetica,Arial,sans-serif" font-weight="600" font-size="15" fill="#ffffff">Google Play</text>
+            </g>
+          </svg>
+        </a>
+
+      </div>
+      <p class="store-note">Free to download · one-off Pro unlock, no subscription</p>
+    </div>
+
+    <section>
+      <h2>What you get</h2>
+      <div class="features">
+        <div class="feature">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          <h3>Import any script</h3>
+          <p>Scan a physical page with your camera, import a text file, or type it in by hand.</p>
+        </div>
+        <div class="feature">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/><line x1="3" y1="3" x2="21" y2="21"/></svg>
+          <h3>Hide your lines</h3>
+          <p>Blank out your own lines and cue yourself line by line until you're word-perfect.</p>
+        </div>
+        <div class="feature">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
+          <h3>Rehearse out loud</h3>
+          <p>Speak your lines and have them checked against the script with voice recognition.</p>
+        </div>
+        <div class="feature">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          <h3>Track your confidence</h3>
+          <p>See your confidence scores climb across rehearsals so you know exactly where you stand.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="cta-box">
+        <p>Everything stays on your device — no account, no tracking, no ads. Just you and your lines.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="https://atbappsdev-al.github.io/OffBook-Privacy/">Privacy</a>
+      <a href="https://atbappsdev-al.github.io/OffBook-Privacy/support.html">Support</a>
+    </div>
+    <p>Copyright © 2025–2026 Alex Brent. All rights reserved.</p>
+    <p style="margin-top: 0.4rem;">OffBook — Built by a performer, for performers.</p>
+  </footer>
+
+</body>
+</html>
