@@ -193,7 +193,7 @@
         <p><strong>Android:</strong> Speech recognition is processed via Google's speech recognition service, which means audio is transmitted to Google's servers for the purpose of converting your speech to text. This is handled by Android's standard speech recognition API and is subject to Google's own privacy policy.</p>
       </div>
       <div class="highlight-box">
-        <p><strong>iOS:</strong> Speech recognition is handled by Apple's Speech framework. Depending on your device and language, Apple may process the audio on-device or transmit it to Apple's servers to convert your speech to text. This is subject to Apple's own privacy policy.</p>
+        <p><strong>iOS:</strong> Speech recognition is handled by Apple's Speech framework. When your device is online, it uses Apple's speech recognition service, which means audio is transmitted to Apple's servers to convert your speech to text. When you are offline, it falls back to on-device recognition where your device supports it, with no audio transmitted. Either way, this is subject to Apple's own privacy policy.</p>
       </div>
       <p>On both platforms, OffBook does not receive, store, or retain any audio recordings or transcriptions beyond what is needed to check your spoken line in the moment.</p>
     </section>

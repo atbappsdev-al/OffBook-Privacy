@@ -261,7 +261,7 @@
 
       <details>
         <summary>Does OffBook work without an internet connection?</summary>
-        <p>Yes, for the most part. Script storage, rehearsal, and line-hiding all work fully offline. A few features use the internet: AI script import and camera scanning send your script to Google's Gemini service for the most accurate results (with an on-device fallback when you're offline), and on Android voice recognition uses Google's speech recognition service. On iOS, voice recognition uses Apple's Speech framework, which may run on-device or via Apple's servers depending on your device and language.</p>
+        <p>Yes, for the most part. Script storage, rehearsal, and line-hiding all work fully offline. A few features use the internet: AI script import and camera scanning send your script to Google's Gemini service for the most accurate results (with an on-device fallback when you're offline), and on Android voice recognition uses Google's speech recognition service. On iOS, voice recognition uses Apple's Speech framework — Apple's online service when you're connected, falling back to on-device recognition when you're offline (where your device supports it).</p>
       </details>
 
       <details>
