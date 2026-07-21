@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "2026-08-formatting-demo",
+  "min_app_version": 1,
+  "max_app_version": 999,
+  "platforms": ["android", "ios"],
+  "title": "🎭 **OffBook** just got an __update__!",
+  "message": "**What's new:**\n- Faster camera import 📸\n- __Active Mode__ now understands Welsh accents\n- Bug fixes and polish\n\nThanks for being part of the OffBook community — **you're brilliant** 🙌",
+  "cta_text": "See what's new",
+  "cta_action": "url",
+  "cta_url": "https://offbook.abdev.dev/whats-new",
+  "expires_at": "2026-09-30T00:00:00Z",
+  "priority": "normal"
+}
