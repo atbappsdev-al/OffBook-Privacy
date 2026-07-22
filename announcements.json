@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "id": "2026-08-formatting-demo",
+  "id": "2026-07-22-formatting-demo",
   "min_app_version": 1,
   "max_app_version": 999,
   "platforms": ["android", "ios"],
