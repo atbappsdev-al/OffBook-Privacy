@@ -2,7 +2,7 @@
   "_readme": "Controls the LIMITED-TIME OFFER badge on the in-app Pro paywall in both OffBook apps. baseline_prices are the REGULAR (full) prices per currency, written as strings — not the sale price. Publishing guide: PRICING.md in this repo.",
 
   "schema_version": 1,
-  "sale_active": false,
+  "sale_active": true,
   "baseline_prices": {
     "GBP": "4.99",
     "USD": "6.99",
