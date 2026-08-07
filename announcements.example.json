@@ -1,0 +1,59 @@
+{
+  "_comment": "EXAMPLE ONLY — no app fetches this file. See ANNOUNCEMENTS.md. Copy the shape into announcements.json to publish. Shows the four-way platform x entitlement split; the top-level fields are the generic fallback that builds predating audience targeting read instead of the array. The free entries use cta_action 'paywall' (added July 2026), which opens the in-app Pro paywall from the button — older builds show those banners without a button.",
+
+  "schema_version": 1,
+
+  "id": "2026-08-01-generic-fallback",
+  "title": "🎭 **OffBook** has news",
+  "message": "There's something new in the app — open the Home screen to take a look.",
+  "platforms": ["android", "ios"],
+  "expires_at": "2026-09-01T00:00:00Z",
+  "priority": "normal",
+
+  "announcements": [
+    {
+      "id": "2026-08-01-ios-pro",
+      "platforms": ["ios"],
+      "audience": "pro",
+      "title": "🎭 **Thanks for being Pro**",
+      "message": "Your Pro unlock now covers:\n- **Confidence scoring** on every run\n- __Full statistics__ history\n- Shareable session cards 🎉",
+      "cta_action": "dismiss_only",
+      "cta_text": "",
+      "expires_at": "2026-09-01T00:00:00Z",
+      "priority": "normal"
+    },
+    {
+      "id": "2026-08-01-ios-free",
+      "platforms": ["ios"],
+      "audience": "free",
+      "title": "🎭 Unlock **OffBook Pro**",
+      "message": "Go further with:\n- **Confidence scoring**\n- __Full statistics__ history\n- Shareable session cards",
+      "cta_action": "paywall",
+      "cta_text": "See Pro",
+      "expires_at": "2026-09-01T00:00:00Z",
+      "priority": "normal"
+    },
+    {
+      "id": "2026-08-01-android-pro",
+      "platforms": ["android"],
+      "audience": "pro",
+      "title": "🎭 **Thanks for being Pro**",
+      "message": "Your Pro unlock now covers:\n- **Confidence scoring** on every run\n- __Full statistics__ history\n- Shareable session cards 🎉",
+      "cta_action": "dismiss_only",
+      "cta_text": "",
+      "expires_at": "2026-09-01T00:00:00Z",
+      "priority": "normal"
+    },
+    {
+      "id": "2026-08-01-android-free",
+      "platforms": ["android"],
+      "audience": "free",
+      "title": "🎭 Unlock **OffBook Pro**",
+      "message": "Go further with:\n- **Confidence scoring**\n- __Full statistics__ history\n- Shareable session cards",
+      "cta_action": "paywall",
+      "cta_text": "See Pro",
+      "expires_at": "2026-09-01T00:00:00Z",
+      "priority": "normal"
+    }
+  ]
+}
